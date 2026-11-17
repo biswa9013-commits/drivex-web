@@ -1,0 +1,328 @@
+.account-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.account-links button,
+.account-links a {
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 5px;
+    padding: 9px 12px;
+    background: transparent;
+    color: #fff;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.account-links button:hover,
+.account-links a:hover {
+    border-color: #ffbd00;
+    color: #ffbd00;
+}
+
+.account-links .account-primary {
+    background: #ffbd00;
+    border-color: #ffbd00;
+    color: #101d2c;
+    font-weight: bold;
+}
+
+.account-links .account-primary:hover {
+    background: #e9a900;
+    color: #101d2c;
+}
+
+.drivex-modal-backdrop {
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background: rgba(5, 15, 25, .72);
+}
+
+.drivex-modal-backdrop[hidden],
+[hidden] {
+    display: none !important;
+}
+
+.drivex-modal {
+    position: relative;
+    width: min(100%, 470px);
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 28px;
+    border-radius: 12px;
+    background: #fff;
+    color: #101d2c;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, .3);
+}
+
+.drivex-modal h2 {
+    margin: 0 35px 8px 0;
+    font-size: 26px;
+}
+
+.drivex-modal p {
+    margin: 0 0 18px;
+    color: #596572;
+}
+
+.drivex-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    border: 0;
+    background: transparent;
+    color: #596572;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.drivex-modal form {
+    display: grid;
+    gap: 13px;
+}
+
+.drivex-modal label {
+    display: grid;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.drivex-modal input,
+.drivex-modal select {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 11px;
+    border: 1px solid #cbd3da;
+    border-radius: 5px;
+    background: #fff;
+    color: #101d2c;
+    font: inherit;
+}
+
+.drivex-modal input:focus,
+.drivex-modal select:focus {
+    outline: 2px solid #ffbd00;
+    outline-offset: 1px;
+}
+
+.drivex-modal .account-submit {
+    min-height: 44px;
+    border: 0;
+    border-radius: 5px;
+    background: #ffbd00;
+    color: #101d2c;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.drivex-modal .account-submit:hover {
+    background: #e9a900;
+}
+
+.account-switch {
+    margin-top: 16px !important;
+    font-size: 14px;
+}
+
+.account-switch button {
+    border: 0;
+    background: transparent;
+    color: #956b00;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.account-error {
+    min-height: 20px;
+    margin: 10px 0 0 !important;
+    color: #b42318 !important;
+    font-size: 14px;
+}
+
+.account-notice {
+    position: fixed;
+    z-index: 1100;
+    right: 20px;
+    bottom: 20px;
+    max-width: min(420px, calc(100vw - 40px));
+    padding: 13px 18px;
+    border-radius: 7px;
+    background: #142b3b;
+    color: #fff;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, .24);
+}
+
+.booking-now {
+    margin-top: 12px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 14px;
+    background: #ffbd00;
+    color: #101d2c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-now:hover {
+    background: #e9a900;
+}
+
+.dashboard-page {
+    min-height: 100vh;
+    background: #f3f6f8;
+    color: #101d2c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard-page .dashboard-header {
+    padding: 20px 5%;
+    background: #1d1d1e;
+    color: #fff;
+}
+
+.dashboard-page .dashboard-header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.dashboard-page .dashboard-header h1 {
+    font-size: 25px;
+}
+
+.dashboard-content {
+    width: min(1200px, 92%);
+    margin: 32px auto;
+}
+
+.dashboard-content h2 {
+    margin-bottom: 8px;
+}
+
+.dashboard-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 22px 0;
+}
+
+.dashboard-summary article {
+    padding: 18px;
+    border: 1px solid #e0e6eb;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.dashboard-summary strong {
+    display: block;
+    margin-top: 7px;
+    color: #956b00;
+    font-size: 24px;
+}
+
+.dashboard-table-wrap {
+    overflow-x: auto;
+    border: 1px solid #e0e6eb;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 13px 14px;
+    border-bottom: 1px solid #e8edf1;
+    vertical-align: middle;
+}
+
+.dashboard-table th {
+    background: #eaf0f4;
+    white-space: nowrap;
+}
+
+.dashboard-table select,
+.dashboard-table button {
+    min-height: 36px;
+    padding: 6px 9px;
+    border: 1px solid #cbd3da;
+    border-radius: 4px;
+    background: #fff;
+    font: inherit;
+}
+
+.dashboard-table button {
+    cursor: pointer;
+}
+
+.dashboard-empty {
+    padding: 22px;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.dashboard-back {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #956b00;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .account-links {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .dashboard-page .dashboard-header .navbar {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .account-links {
+        display: none;
+        flex: 1 0 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .header .menu-toggle:checked ~ .account-links {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .drivex-modal {
+        padding: 23px 18px;
+    }
+
+    .account-links button,
+    .account-links a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
